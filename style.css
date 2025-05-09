@@ -576,11 +576,11 @@ footer p
 @media (max-width: 580px)
 {
     .home
-    { 
+    {
         height: 100vh;
         .home-img img
         {
-            width: 300px;
+            width: 400px;
             height: auto;
         }
         .home-text
