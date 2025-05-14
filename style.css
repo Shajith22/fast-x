@@ -197,7 +197,7 @@ header.sticky
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    gap: 50px;
+    gap: 5%;
     align-items: center;
     margin-top: 40px;
     .row
@@ -540,7 +540,8 @@ footer p
     {
         grid-template-columns: 1fr;
         text-align: center;
-        height: 117vh;
+        height: 70vh;
+        row-gap: 10px;
         padding-top: 100px;
         .home-img img
         {
@@ -556,6 +557,10 @@ footer p
             h4 {font-size: 22px;letter-spacing: 6px;}
             .btn{letter-spacing: 8px; font-size: 14px;}
         }
+    }
+    .feature-content
+    {
+        margin-bottom: 20px;
     }
 
     .cta
@@ -577,10 +582,12 @@ footer p
 {
     .home
     {
-        height: 100vh;
+        height: 70vh;
+        row-gap: 10px;
+
         .home-img img
         {
-            width: 400px;
+            width: 90%;
             height: auto;
         }
         .home-text
@@ -595,7 +602,7 @@ footer p
     }
     .product-content
     {
-        margin-top: 15px;
+        margin-top: 40px;
         grid-template-columns: repeat(2, minmax(200px, auto));
         .box
         {
@@ -619,6 +626,31 @@ footer p
                 margin-bottom:18px;
             }
 
+        }
+    }
+}
+
+@media (max-width: 475px)
+{
+    .home
+    {
+        height: 70vh;
+        row-gap: 10px;
+        padding-right: 20px;
+
+        .home-img img
+        {
+            width: 90%;
+            height: auto;
+        }
+        .home-text
+        {
+            align-items: center;
+
+            h1 {font-size: 40px; letter-spacing: 0px; }
+            h2 {font-size: 30px;letter-spacing: 0px;}
+            h4 {font-size: 18px;letter-spacing: 0px;}
+            .btn{letter-spacing: 2px; font-size: 14px;}
         }
     }
 }
